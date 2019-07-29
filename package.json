@@ -6,6 +6,10 @@
   "scripts": {
     "build": "webpack"
   },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
