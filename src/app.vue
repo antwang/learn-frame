@@ -4,18 +4,22 @@
     <router-view/>
   </div>
 </template>
-<script>
-export default {};
-</script>
-
 <style lang="scss">
+// sass/scss用户请使用这段代码
 $black: black;
 $yellow: yellow;
 h2 {
-  font-size: 40px;
   color: $black;
   background: $yellow;
-  transform: rotate(15deg);
+  transform: rotate(20deg);
 }
 </style>
 
+<!--style lang="less">
+// less用户请使用此代码
+h2 {
+  color: black;
+  background: yellow;
+  transform: rotate(20deg);
+}
+</style-->

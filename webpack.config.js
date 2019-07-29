@@ -8,16 +8,6 @@ module.exports = {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist")
   },
-  devtool: "eval-source-map",
-  devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    hot: true,
-    compress: true,
-    overlay: true,
-    open: true,
-    port: 3000
-  },
-  mode: "development",
   module: {
     rules: [
       {
@@ -29,6 +19,13 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader"
       },
+      // less用户请配置此段代码
+      // {
+      //   test: /\.less$/,
+      //   use: ["style-loader", "css-loader", "postcss-loader", "less-loader"]
+      // },
+
+      // sass用户请配置此段代码
       {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
